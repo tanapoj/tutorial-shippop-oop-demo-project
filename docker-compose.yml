@@ -36,11 +36,11 @@ services:
     volumes_from:
       - php
     ports:
-      - 80:80
+      - 8080:80
 
   pma:
       image: phpmyadmin/phpmyadmin
       container_name: repo-phpmyadmin
       restart: always
       ports:
-        - "8000:80"
+        - "3333:80"
